@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151918">
+  <meta name="description" content="MOTION LAB — 15 interactive website effects. ทดลอง Scrollytelling, 3D, Parallax, Before/After, Image Sequence และอีกมากมายบนเว็บจริง">
+  <title>MOTION LAB / 15 Interactive Website Experiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="MOTION LAB กลับหน้าต้น"><span class="brand-mark"><i></i><i></i><i></i></span><span>MOTION<span class="brand-light">/LAB</span></span><span class="brand-count">15</span></a>
+    <nav class="nav-links" aria-label="เมนูหลัก"><a href="#directory">ALL EFFECTS</a><a href="#chapter-story">STORY</a><a href="#chapter-interact">INTERACT</a><a href="#chapter-details">DETAILS</a></nav>
+    <a class="nav-cta" href="#directory">EXPLORE <span>↗</span></a>
+    <button class="mobile-menu" id="menuToggle" aria-expanded="false" aria-label="เปิดเมนู"><span></span><span></span></button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <span class="hero-side-code" aria-hidden="true">EXPERIENCE INDEX&nbsp;&nbsp; 001—015</span>
+      <div class="hero-copy">
+        <div class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> THE INTERACTIVE DESIGN PLAYGROUND <span class="eyebrow-line"></span> VOL. 01 / 2026</div>
+        <h1>DON'T JUST<br><em>SCROLL.</em><br><span class="hero-outline">FEEL IT.</span></h1>
+        <p class="hero-sub">15 เทคนิคออกแบบเว็บไซต์ที่ไม่ได้มีไว้แค่ดู<br>แต่มีไว้ให้ <strong>เลื่อน • คลิก • ลาก • หมุน • สัมผัส</strong> ด้วยตัวคุณเอง</p>
+        <div class="hero-actions"><a class="btn btn-coral" href="#demo-1">START EXPLORING <span>↗</span></a><a class="text-link" href="#directory">VIEW ALL 15 <span>↘</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="ภาพตัวอย่างชั้นงานออกแบบที่เคลื่อนไหว">
+        <div class="hero-rings"><div></div><div></div><div></div></div>
+        <div class="hero-img hero-img-back"><img src="assets/room-sage.svg" alt="ห้องตกแต่งผนังลายใบไม้"></div>
+        <div class="hero-img hero-img-main"><img src="assets/room-after.svg" alt="ห้องตกแต่งผนังวอลเปเปอร์ลายโค้ง"></div>
+        <div class="hero-swatch"><div class="swatch-chip"></div><span>INTERACTIVE<br><b>MATERIALS</b></span><span class="swatch-arrow">↗</span></div>
+        <div class="hero-stamp">MOVE<br><span>DIFFERENT.</span></div>
+        <span class="hero-orbit-label">DEPTH / 3D / MOTION</span>
+      </div>
+      <div class="hero-bottom"><div><span class="hero-down-arrow">↓</span> SCROLL TO EXPLORE</div><div class="hero-bottom-metric"><b>15</b><span>LIVE<br>EXPERIMENTS</span></div><div class="hero-bottom-metric"><b>100%</b><span>FRONT-END<br>GITHUB READY</span></div></div>
+    </section>
+    <div class="marquee" aria-hidden="true"><div>SCROLL TO UNLOCK ✳ DRAG TO EXPLORE ✳ HOVER TO DISCOVER ✳ CLICK TO TRANSFORM ✳ SCROLL TO UNLOCK ✳ DRAG TO EXPLORE ✳ HOVER TO DISCOVER ✳ CLICK TO TRANSFORM ✳&nbsp;</div></div>
+
+    <section class="directory section-wrap" id="directory">
+      <div class="section-topline"><span>INDEX / 001—015</span><span>SELECT AN EXPERIENCE ↓</span></div>
+      <div class="directory-heading"><h2>FIFTEEN WAYS<br>TO <em>STAND OUT.</em></h2><p>เลือกทดลองลูกเล่นแต่ละแบบได้เลย<br>ทุกหัวข้อมีการทำงานให้ทดลองจริง</p></div>
+      <div class="directory-grid">
+        <a href="#demo-1"><span>01</span><b>Scrollytelling</b><small>SCROLL</small><i>↗</i></a>
+        <a href="#demo-2"><span>02</span><b>Scroll-Controlled 3D</b><small>SCROLL</small><i>↗</i></a>
+        <a href="#demo-3"><span>03</span><b>Parallax Depth</b><small>MOVE</small><i>↗</i></a>
+        <a href="#demo-4"><span>04</span><b>Cinematic Transitions</b><small>CLICK</small><i>↗</i></a>
+        <a href="#demo-5"><span>05</span><b>Pinned Story Sections</b><small>SCROLL</small><i>↗</i></a>
+        <a href="#demo-6"><span>06</span><b>Horizontal Scroll</b><small>SCROLL</small><i>↗</i></a>
+        <a href="#demo-7"><span>07</span><b>3D Product Viewer</b><small>DRAG</small><i>↗</i></a>
+        <a href="#demo-8"><span>08</span><b>Interactive Hotspots</b><small>CLICK</small><i>↗</i></a>
+        <a href="#demo-9"><span>09</span><b>Before / After Slider</b><small>DRAG</small><i>↗</i></a>
+        <a href="#demo-10"><span>10</span><b>Morphing Animation</b><small>CLICK</small><i>↗</i></a>
+        <a href="#demo-11"><span>11</span><b>Magnetic Buttons</b><small>HOVER</small><i>↗</i></a>
+        <a href="#demo-12"><span>12</span><b>Interactive Cursor</b><small>HOVER</small><i>↗</i></a>
+        <a href="#demo-13"><span>13</span><b>Split Text Animation</b><small>CLICK</small><i>↗</i></a>
+        <a href="#demo-14"><span>14</span><b>Bento Grid Motion</b><small>CLICK</small><i>↗</i></a>
+        <a href="#demo-15"><span>15</span><b>Image Sequence Animation</b><small>SCROLL</small><i>↗</i></a>
+      </div>
+    </section>
+
+    <div class="chapter" id="chapter-story"><div class="chapter-label"><span class="chap-no">CHAPTER 01 / 03</span><span>SCROLL-DRIVEN STORIES</span></div><h2>MAKE YOUR<br><i>STORY MOVE.</i></h2><p>ให้การเลื่อนเว็บกลายเป็นส่วนหนึ่งของการเล่าเรื่อง</p><div class="chapter-circle">01—05 ↗</div></div>
+
+    <section id="demo-1" class="scrolly-demo scroll-track" data-demo="1">
+      <div class="scrolly-sticky">
+        <div class="experience-head head-on-dark"><div class="experience-num">01 <span>/ 15</span></div><div><span class="experience-kicker">SCROLLYTELLING</span><h3>THE WALL<br><em>COMES ALIVE.</em></h3><p>เลื่อนลงเพื่อเปลี่ยนผนังเปล่าให้เป็นห้องที่ติดวอลเปเปอร์แล้ว</p></div><span class="demo-instruction">↡ SCROLL TO TRANSFORM</span></div>
+        <div class="story-visual">
+          <img src="assets/room-before.svg" alt="ห้องก่อนติดวอลเปเปอร์" class="story-base">
+          <img src="assets/room-after.svg" alt="ห้องหลังติดวอลเปเปอร์" class="story-after" id="storyAfter">
+          <div class="story-overlay"><span id="storyStage">STEP 01 — BEFORE</span><span id="storyPercent">00%</span></div>
+          <div class="story-stage-line"><span id="storyIndicator"></span></div>
+        </div>
+        <div class="story-caption" id="storyCaption">เริ่มต้นจากผนังเรียบธรรมดา ...</div>
+      </div>
+    </section>
+
+    <section id="demo-2" class="experience section-wrap" data-demo="2">
+      <div class="experience-heading"><div class="experience-num">02 <span>/ 15</span></div><div><span class="experience-kicker">SCROLL-CONTROLLED 3D</span><h3>DIMENSIONS<br><em>ON DEMAND.</em></h3><p>เลื่อนหน้าจอเพื่อหมุนตัวอย่างวัสดุแบบสามมิติ โดยมุมมองจะเปลี่ยนตามตำแหน่งการเลื่อน</p></div><span class="pill">↡ SCROLL</span></div>
+      <div class="showcase dark-showcase scroll-cube-stage">
+        <div class="stage-dots" aria-hidden="true"></div>
+        <div class="cube-stage"><div class="cube" id="scrollCube"><div class="cube-face front">WALL<span>01</span></div><div class="cube-face back">SPACE<span>02</span></div><div class="cube-face right">DESIGN</div><div class="cube-face left">MATERIAL</div><div class="cube-face top">LAB 15</div><div class="cube-face bottom">MOTION</div></div></div>
+        <div class="stage-side-text">MATERIAL FORM <span>↗</span><strong id="scroll3dAngle">ROTATION / 000°</strong></div>
+      </div>
+    </section>
+
+    <section id="demo-3" class="experience section-wrap" data-demo="3">
+      <div class="experience-heading"><div class="experience-num">03 <span>/ 15</span></div><div><span class="experience-kicker">PARALLAX DEPTH</span><h3>MORE THAN<br><em>ONE LAYER.</em></h3><p>ขยับเมาส์บนภาพ หรือเลื่อนหน้า เพื่อดูวัตถุแต่ละชั้นเคลื่อนที่ด้วยความเร็วต่างกัน</p></div><span class="pill">↗ MOVE / SCROLL</span></div>
+      <div class="parallax-world" id="parallaxWorld">
+        <div class="parallax-grid"></div><div class="parallax-shape para-back" data-depth="12"></div><div class="para-type" data-depth="-10">THE<br>FUTURE</div>
+        <div class="para-photo" data-depth="26"><img src="assets/room-sage.svg" alt="ห้องตกแต่งผนังลายธรรมชาติ"></div>
+        <div class="para-tile para-left" data-depth="42"><span>DEEPER<br>THAN FLAT.</span></div>
+        <div class="para-circle" data-depth="-35">✳</div><div class="para-tag" data-depth="54">LAYER_04 ↗</div>
+        <div class="para-caption">04 INTERDEPENDENT LAYERS&nbsp;—&nbsp; MOVE YOUR CURSOR</div>
+      </div>
+    </section>
+
+    <section id="demo-4" class="experience section-wrap" data-demo="4">
+      <div class="experience-heading"><div class="experience-num">04 <span>/ 15</span></div><div><span class="experience-kicker">CINEMATIC TRANSITIONS</span><h3>EVERY CUT<br><em>IS A MOMENT.</em></h3><p>คลิกเปลี่ยนบรรยากาศห้อง ด้วยการเปลี่ยนฉากแบบภาพยนตร์</p></div><span class="pill">↗ CLICK</span></div>
+      <div class="cinema" id="cinema"><img src="assets/room-clay.svg" alt="ห้องสไตล์อบอุ่น" id="cinemaImage"><div class="cinema-caption"><span class="film-count" id="filmCount">SCENE 01 / 03</span><h4 id="cinemaTitle">WARM<br>MINIMALISM.</h4><span>INTERIOR FILM / 2026</span></div><div class="cinema-bars top"></div><div class="cinema-bars bottom"></div><div class="cinema-shutter" id="cinemaShutter"><span>NEW PERSPECTIVE / NEW SPACE</span></div><button class="cinema-next" id="cinemaNext">NEXT SCENE <span>↗</span></button></div>
+    </section>
+
+    <section id="demo-5" class="pinned-story section-wrap" data-demo="5">
+      <div class="experience-heading"><div class="experience-num">05 <span>/ 15</span></div><div><span class="experience-kicker">PINNED STORY SECTIONS</span><h3>ONE FRAME.<br><em>THREE STORIES.</em></h3><p>ภาพด้านซ้ายจะอยู่กับที่ ในขณะที่ข้อความด้านขวาเปลี่ยนไปทีละเรื่องเมื่อเลื่อนลง</p></div><span class="pill">↡ SCROLL</span></div>
+      <div class="pin-layout"><div class="pin-visual"><img id="pinnedImage" src="assets/room-sand.svg" alt="ผนังวัสดุพื้นผิวแบบธรรมชาติ"><div class="pin-counter"><span>COLLECTION /</span><strong id="pinCounter">01</strong><span>03</span></div></div>
+        <div class="pin-steps">
+          <article data-pin="0"><span>01 — TEXTURE</span><h4>FEEL<br>THE <em>DETAIL.</em></h4><p>ผิวสัมผัสอบอุ่น เสริมความนุ่มนวลให้บรรยากาศภายในห้อง</p></article>
+          <article data-pin="1"><span>02 — COLOR</span><h4>MAKE<br>IT <em>NATURAL.</em></h4><p>โทนสีเขียวและลวดลายธรรมชาติ สร้างความสงบให้พื้นที่ใช้งาน</p></article>
+          <article data-pin="2"><span>03 — CHARACTER</span><h4>OWN<br>YOUR <em>STYLE.</em></h4><p>เปลี่ยนทุกผนังให้มีบุคลิกด้วยเส้นสายและแพตเทิร์นที่แตกต่าง</p></article>
+        </div>
+      </div>
+    </section>
+
+    <div class="chapter chapter-light" id="chapter-interact"><div class="chapter-label"><span class="chap-no">CHAPTER 02 / 03</span><span>PRODUCT INTERACTION</span></div><h2>DON'T SHOW IT.<br><i>LET THEM TRY.</i></h2><p>ให้ผู้ชมมีส่วนร่วมกับภาพ สินค้า และข้อมูลด้วยตัวเอง</p><div class="chapter-circle">06—10 ↗</div></div>
+
+    <section class="horizontal-demo scroll-track" id="demo-6" data-demo="6"><div class="h-sticky"><div class="h-header section-wrap"><div class="experience-num">06 <span>/ 15</span></div><div><span class="experience-kicker">HORIZONTAL SCROLL</span><h3>SIDEWAYS <em>THINKING.</em></h3><p>เลื่อนลง แล้วแกลเลอรีจะวิ่งไปทางขวา →</p></div><span class="pill">↡ SCROLL = → SLIDE</span></div><div class="h-track-viewport"><div class="h-track" id="hTrack"><article class="h-card"><img src="assets/room-clay.svg" alt="วอลเปเปอร์ลายเส้นสไตล์เทอร์ราคอตตา"><div><span>01 / COLLECTION</span><h4>TERRA<br>STUDIO</h4><b>↗</b></div></article><article class="h-card"><img src="assets/room-sage.svg" alt="วอลเปเปอร์ลายใบไม้สีเขียว"><div><span>02 / COLLECTION</span><h4>GREEN<br>STORY</h4><b>↗</b></div></article><article class="h-card"><img src="assets/room-night.svg" alt="วอลเปเปอร์สีเข้มลายเรขาคณิต"><div><span>03 / COLLECTION</span><h4>AFTER<br>DARK</h4><b>↗</b></div></article><article class="h-card"><img src="assets/room-after.svg" alt="วอลเปเปอร์ลายโค้งสีส้ม"><div><span>04 / COLLECTION</span><h4>ARCH<br>FORM</h4><b>↗</b></div></article></div></div><div class="h-progress section-wrap"><span>SCROLL PROGRESS</span><div class="h-progressbar"><i id="hProgress"></i></div><span>01 — 04</span></div></div></section>
+
+    <section id="demo-7" class="experience section-wrap" data-demo="7"><div class="experience-heading"><div class="experience-num">07 <span>/ 15</span></div><div><span class="experience-kicker">3D PRODUCT VIEWER</span><h3>TURN IT.<br><em>KNOW IT.</em></h3><p>ลากบนตัวอย่างวัสดุเพื่อหมุนดูรอบด้าน รองรับทั้งเมาส์ นิ้วสัมผัส และปุ่มลูกศรคีย์บอร์ด</p></div><span class="pill">↔ DRAG TO ROTATE</span></div><div class="viewer-showcase"><div class="viewer-instruction">↔ DRAG TO ROTATE<br><span>CURSOR / TOUCH / ← →</span></div><div class="viewer-area" id="viewerArea" tabindex="0" role="group" aria-label="โมเดลกล่องตัวอย่างวัสดุสามมิติ กดลูกศรหรือใช้เมาส์ลาก"><div class="viewer-object" id="viewerObject"><div class="viewer-face v-front"><span>W.</span><small>WALLPAPER<br>COLLECTION</small><strong>ARCH<br>001</strong></div><div class="viewer-face v-back"><small>MOTION/LAB</small><strong>SURFACE<br>STUDIES</strong></div><div class="viewer-face v-right"><b>100%<br>DESIGN</b></div><div class="viewer-face v-left"><b>WALL<br>LAB</b></div><div class="viewer-face v-top">MOTION LAB / MATERIALS</div><div class="viewer-face v-bottom">THE FUTURE IS TACTILE</div></div></div><div class="viewer-angle">ROTATION <strong id="viewerAngle">X −12° / Y −24°</strong><button id="viewerReset" type="button">↺ RESET VIEW</button></div></div></section>
+
+    <section id="demo-8" class="experience section-wrap" data-demo="8"><div class="experience-heading"><div class="experience-num">08 <span>/ 15</span></div><div><span class="experience-kicker">INTERACTIVE HOTSPOTS</span><h3>EVERY POINT<br><em>TELLS MORE.</em></h3><p>แตะจุดบนภาพห้องเพื่อดูรายละเอียดวัสดุ จุดติดตั้ง หรือองค์ประกอบการตกแต่ง</p></div><span class="pill">◎ CLICK THE POINTS</span></div><div class="hotspot-demo"><img src="assets/room-after.svg" alt="ภาพห้องที่มีจุดสำหรับสำรวจวัสดุ" class="hotspot-image"><button class="hotspot active" data-spot="0" style="left:66%;top:24%" aria-label="รายละเอียดวอลเปเปอร์"><span>+</span></button><button class="hotspot" data-spot="1" style="left:22%;top:36%" aria-label="รายละเอียดหน้าต่าง"><span>+</span></button><button class="hotspot" data-spot="2" style="left:51%;top:70%" aria-label="รายละเอียดเฟอร์นิเจอร์"><span>+</span></button><button class="hotspot" data-spot="3" style="left:78%;top:82%" aria-label="รายละเอียดพื้น"><span>+</span></button><div class="hotspot-info" id="hotspotInfo"><span>01 / MATERIAL DETAIL</span><h4>ARCH WALLPAPER</h4><p>วอลเปเปอร์ลายโค้ง โทนอบอุ่น เหมาะกับห้องพักผ่อน</p><small>CLICK OTHER POINTS ↗</small></div></div></section>
+
+    <section id="demo-9" class="experience section-wrap" data-demo="9"><div class="experience-heading"><div class="experience-num">09 <span>/ 15</span></div><div><span class="experience-kicker">BEFORE / AFTER SLIDER</span><h3>SEE THE<br><em>DIFFERENCE.</em></h3><p>ลากตัวแบ่งไปทางซ้ายหรือขวา เพื่อเปรียบเทียบห้องก่อนและหลังตกแต่ง</p></div><span class="pill">↔ DRAG</span></div><div class="comparison" id="comparison"><img src="assets/room-before.svg" alt="ก่อนติดวอลเปเปอร์" class="comparison-bottom"><img src="assets/room-after.svg" alt="หลังติดวอลเปเปอร์" class="comparison-top" id="comparisonTop"><span class="compare-label before">BEFORE</span><span class="compare-label after">AFTER</span><div class="compare-divider" id="compareDivider"><div>◀&nbsp; ▶</div></div><input id="comparisonRange" type="range" min="0" max="100" value="50" aria-label="เลื่อนเพื่อเปรียบเทียบภาพก่อนและหลัง"></div></section>
+
+    <section id="demo-10" class="experience section-wrap" data-demo="10"><div class="experience-heading"><div class="experience-num">10 <span>/ 15</span></div><div><span class="experience-kicker">MORPHING ANIMATION</span><h3>SHAPES WITHOUT<br><em>LIMITS.</em></h3><p>ดูรูปทรงเปลี่ยนเป็นอีกรูปทรงอย่างลื่นไหล ไม่ใช่การตัดภาพธรรมดา</p></div><span class="pill">↗ CLICK TO MORPH</span></div><div class="morph-showcase"><div class="morph-type">FLUID<br><em>FORM</em><small>SVG PATH INTERPOLATION</small></div><svg class="morph-svg" viewBox="0 0 600 440" role="img" aria-label="รูปทรงเวกเตอร์ที่เปลี่ยนรูปร่างต่อเนื่อง"><defs><linearGradient id="morphGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fa9d6b"/><stop offset="1" stop-color="#be483b"/></linearGradient></defs><path id="morphPath" d="M 300 65 C 420 65 510 130 510 225 C 510 340 400 385 300 385 C 200 385 90 340 90 225 C 90 130 180 65 300 65 Z" fill="url(#morphGrad)"/></svg><div class="morph-controls"><span>SHAPE <b id="morphIndex">01</b> / 03</span><button id="morphNext">MORPH AGAIN <span>↗</span></button></div></div></section>
+
+    <div class="chapter chapter-last" id="chapter-details"><div class="chapter-label"><span class="chap-no">CHAPTER 03 / 03</span><span>MICRO INTERACTIONS</span></div><h2>THE LITTLE<br><i>DETAILS MATTER.</i></h2><p>สัมผัสเล็ก ๆ ที่ทำให้เว็บไซต์มีเอกลักษณ์น่าจดจำ</p><div class="chapter-circle">11—15 ↗</div></div>
+
+    <section id="demo-11" class="experience section-wrap" data-demo="11"><div class="experience-heading"><div class="experience-num">11 <span>/ 15</span></div><div><span class="experience-kicker">MAGNETIC BUTTONS</span><h3>HARD TO<br><em>RESIST.</em></h3><p>นำเมาส์ไปใกล้ปุ่ม แล้วดูว่าปุ่มจะเคลื่อนเข้าหาตำแหน่งเคอร์เซอร์อย่างนุ่มนวล</p></div><span class="pill">↗ HOVER NEAR BUTTON</span></div><div class="magnetic-demo"><div class="magnetic-aura"></div><span>THIS BUTTON IS ATTRACTED TO YOU.</span><button class="magnetic-button" id="magneticButton"><span>GET CLOSER</span><b>↗</b></button><p id="magneticMessage">TRY MOVING YOUR CURSOR AROUND THE BUTTON</p></div></section>
+
+    <section id="demo-12" class="experience section-wrap" data-demo="12"><div class="experience-heading"><div class="experience-num">12 <span>/ 15</span></div><div><span class="experience-kicker">INTERACTIVE CURSOR</span><h3>A CURSOR<br><em>WITH CHARACTER.</em></h3><p>เคอร์เซอร์จะเปลี่ยนบทบาทตามพื้นที่ที่ชี้ ลองชี้ไปที่ข้อความแต่ละแถว</p></div><span class="pill">↗ HOVER / TAP</span></div><div class="cursor-demo" id="cursorDemo"><div class="cursor-line" data-cursor="VIEW ↗"><span>01</span><b>DISCOVER</b><i>↗</i></div><div class="cursor-line" data-cursor="DRAG ↔"><span>02</span><b>EXPLORE</b><i>↗</i></div><div class="cursor-line" data-cursor="PLAY ▶"><span>03</span><b>EXPERIENCE</b><i>↗</i></div><div class="custom-cursor" id="customCursor">VIEW ↗</div></div></section>
+
+    <section id="demo-13" class="experience section-wrap" data-demo="13"><div class="experience-heading"><div class="experience-num">13 <span>/ 15</span></div><div><span class="experience-kicker">SPLIT TEXT ANIMATION</span><h3>WORDS WITH<br><em>IMPACT.</em></h3><p>ตัวอักษรแต่ละตัวปรากฏทีละจังหวะ พร้อมการยกขึ้นและหมุนเล็กน้อย</p></div><span class="pill">↗ REPLAY</span></div><div class="split-demo"><div class="split-overline">THE ART OF A FIRST IMPRESSION / 013</div><div class="split-headline" id="splitHeadline" aria-label="MAKE IT MEMORABLE"><div data-split="MAKE IT"></div><div data-split="MEMORABLE."></div></div><div class="split-bottom"><span>STAGGERED CHARACTER REVEAL</span><button id="splitReplay">↺ REPLAY ANIMATION</button></div></div></section>
+
+    <section id="demo-14" class="experience section-wrap" data-demo="14"><div class="experience-heading"><div class="experience-num">14 <span>/ 15</span></div><div><span class="experience-kicker">BENTO GRID MOTION</span><h3>GRID, BUT<br><em>MAKE IT MOVE.</em></h3><p>ลองคลิกการ์ดแต่ละใบ การจัดวางและข้อมูลจะตอบสนองต่อสิ่งที่เลือก</p></div><span class="pill">↗ SELECT A CARD</span></div><div class="bento" id="bento"><button class="bento-card bento-feature active" data-bento="0"><span>01 / MATERIAL</span><strong>DESIGN<br>THE WALL.</strong><img src="assets/room-after.svg" alt="ตัวอย่างตกแต่งผนัง"><i>↗</i></button><button class="bento-card bento-sage" data-bento="1"><span>02 / TEXTURE</span><strong>NATURE<br>INSIDE.</strong><i>↗</i></button><button class="bento-card bento-orange" data-bento="2"><span>03 / COLOR</span><strong>FIND<br>YOUR TONE.</strong><i>↗</i></button><button class="bento-card bento-dark" data-bento="3"><span>04 / DETAIL</span><strong>SMALL<br>THINGS.</strong><i>↗</i></button><div class="bento-details"><span>SELECTED EXPERIMENT</span><h4 id="bentoTitle">DESIGN THE WALL</h4><p id="bentoDescription">พื้นผิวและลวดลายที่ออกแบบให้พื้นที่มีเอกลักษณ์</p></div></div></section>
+
+    <section id="demo-15" class="sequence-demo scroll-track" data-demo="15"><div class="sequence-sticky"><div class="sequence-copy"><div class="experience-num">15 <span>/ 15</span></div><span class="experience-kicker">IMAGE SEQUENCE ANIMATION</span><h3>FRAME<br>BY <em>FRAME.</em></h3><p>48 เฟรมภาพจริงที่สร้างไว้ล่วงหน้า เลื่อนหน้าเพื่อควบคุมการติดวอลเปเปอร์แบบเฟรมต่อเฟรม หรือทดลองลากแถบด้านล่าง</p><div class="sequence-state"><span>FRAME</span><strong id="sequenceNumber">01</strong><span>/ 48</span></div><input type="range" min="0" max="47" value="0" id="sequenceRange" aria-label="เลื่อนดูภาพเคลื่อนไหวทีละเฟรม"><div class="sequence-small">↡ SCROLL OR DRAG THE TIMELINE</div></div><div class="sequence-display"><canvas id="sequenceCanvas" width="960" height="590" aria-label="ภาพเคลื่อนไหวการเปลี่ยนห้องก่อนและหลังติดวอลเปเปอร์"></canvas><div class="sequence-caption"><span>PROJECT: WALL TRANSFORMATION</span><span id="sequencePercent">000%</span></div></div></div></section>
+
+    <section class="final-cta"><div class="final-orb" aria-hidden="true">✳</div><span class="final-kicker">END OF EXPERIENCE / 015</span><h2>THE BEST WEBSITES<br>AREN'T JUST SEEN.<br><em>THEY'RE FELT.</em></h2><p>นี่คือตัวอย่าง Front-end Interactions ทั้ง 15 เทคนิค<br>สามารถนำแนวคิดไปประยุกต์กับเว็บสินค้า เว็บไซต์แบรนด์ และ Landing Page ได้</p><div class="final-actions"><a href="#directory" class="btn btn-coral">EXPLORE AGAIN ↗</a><a href="#home" class="text-link">BACK TO TOP ↑</a></div><div class="final-bottom"><span>MOTION/LAB — AN INTERACTIVE WEB SHOWCASE</span><span>MADE WITH HTML / CSS / JAVASCRIPT</span></div></section>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
