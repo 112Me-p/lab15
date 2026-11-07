@@ -1,3 +1,38 @@
+# MOTION LAB — 30 Interactive Website Effects
+
+> **VOL. 01 — 01–15** stays at [`index.html`](index.html). **VOL. 02 — 16–30** is now at [`vol02.html`](vol02.html). Both volumes are fully static and work on GitHub Pages.
+
+## VOL. 02: New interactions
+
+16. Liquid Glass UI — drag the frosted, clear, or amber glass pane.
+17. Magnetic Bubble — pointer-proximity spring attraction and bubble taps.
+18. WebGL Distortion — real GPU fragment shader on a local material image; static fallback when WebGL is unavailable.
+19. Infinite Canvas — pan and wheel/button zoom around a moodboard.
+20. Text Scramble — live character decoding on click.
+21. 3D Card Tilt — pointer-controlled perspective and glare.
+22. Scroll Velocity — kinetic marquee responding to scroll speed.
+23. Fluid Cursor Trail — draw a fading canvas ribbon.
+24. SVG Path Drawing — scrub or auto-play a drawn SVG path.
+25. Kinetic Typography — type reacts to cursor proximity.
+26. Immersive Page Transition — switch scenes with an animated page wipe.
+27. Dynamic Image Mask — reveal interior images with circle or square masks.
+28. Interactive Particle System — particle repulsion, attraction, and burst.
+29. 3D Spatial Gallery — explore a depth-spaced gallery with arrows or swipes.
+30. Scroll-Driven Video — scrub a real locally hosted H.264 MP4, including via the timeline slider.
+
+## Files added
+
+- `vol02.html`: 15 interactive experiment layouts and navigation.
+- `vol02.css`: styling, responsive layouts, reduced-motion adaptations.
+- `vol02.js`: self-contained interaction logic and WebGL shader.
+- `assets/vol02-scrub.mp4`: actual 4-second, locally hosted MP4 encoded from the 48 original artwork frames.
+
+## Deployment
+
+No framework, npm, API keys, or build step. Put files on the `main` branch of this GitHub Pages repository. Open `/lab15/` for VOL.01 and `/lab15/vol02.html` for VOL.02. Assets use relative URLs to work under project pages.
+
+---
+
 # MOTION / LAB — 15 Interactive Website Effects
 
 เว็บไซต์สาธิตลูกเล่น Front-end 15 เทคนิค เปิดใช้งานบน **GitHub Pages** ได้โดยตรง ไม่ต้องใช้ Node.js, npm, database, backend หรือระบบ build

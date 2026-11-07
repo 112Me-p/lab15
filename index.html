@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#151918">
-  <meta name="description" content="MOTION LAB — 15 interactive website effects. ทดลอง Scrollytelling, 3D, Parallax, Before/After, Image Sequence และอีกมากมายบนเว็บจริง">
+  <meta name="description" content="MOTION LAB — 30 interactive website effects, volume one of two. ทดลอง Scrollytelling, 3D, Parallax, Before/After, Image Sequence และอีกมากมายบนเว็บจริง">
   <title>MOTION LAB / 15 Interactive Website Experiences</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +14,9 @@
 <body>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   <header class="topbar" id="topbar">
-    <a class="brand" href="#home" aria-label="MOTION LAB กลับหน้าต้น"><span class="brand-mark"><i></i><i></i><i></i></span><span>MOTION<span class="brand-light">/LAB</span></span><span class="brand-count">15</span></a>
-    <nav class="nav-links" aria-label="เมนูหลัก"><a href="#directory">ALL EFFECTS</a><a href="#chapter-story">STORY</a><a href="#chapter-interact">INTERACT</a><a href="#chapter-details">DETAILS</a></nav>
-    <a class="nav-cta" href="#directory">EXPLORE <span>↗</span></a>
+    <a class="brand" href="#home" aria-label="MOTION LAB กลับหน้าต้น"><span class="brand-mark"><i></i><i></i><i></i></span><span>MOTION<span class="brand-light">/LAB</span></span><span class="brand-count">30</span></a>
+    <nav class="nav-links" aria-label="เมนูหลัก"><a href="#directory">ALL EFFECTS</a><a href="#chapter-story">STORY</a><a href="#chapter-interact">INTERACT</a><a href="#chapter-details">DETAILS</a><a href="vol02.html#index">VOL. 02 / NEW ↗</a></nav>
+    <a class="nav-cta" href="vol02.html">VOL. 02 <span>↗</span></a>
     <button class="mobile-menu" id="menuToggle" aria-expanded="false" aria-label="เปิดเมนู"><span></span><span></span></button>
   </header>
   <main>
@@ -27,7 +27,7 @@
         <div class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> THE INTERACTIVE DESIGN PLAYGROUND <span class="eyebrow-line"></span> VOL. 01 / 2026</div>
         <h1>DON'T JUST<br><em>SCROLL.</em><br><span class="hero-outline">FEEL IT.</span></h1>
         <p class="hero-sub">15 เทคนิคออกแบบเว็บไซต์ที่ไม่ได้มีไว้แค่ดู<br>แต่มีไว้ให้ <strong>เลื่อน • คลิก • ลาก • หมุน • สัมผัส</strong> ด้วยตัวคุณเอง</p>
-        <div class="hero-actions"><a class="btn btn-coral" href="#demo-1">START EXPLORING <span>↗</span></a><a class="text-link" href="#directory">VIEW ALL 15 <span>↘</span></a></div>
+        <div class="hero-actions"><a class="btn btn-coral" href="#demo-1">START EXPLORING <span>↗</span></a><a class="text-link" href="vol02.html#index">NEW: EXPERIMENTS 16–30 <span>↗</span></a></div>
       </div>
       <div class="hero-art" aria-label="ภาพตัวอย่างชั้นงานออกแบบที่เคลื่อนไหว">
         <div class="hero-rings"><div></div><div></div><div></div></div>
@@ -62,6 +62,8 @@
         <a href="#demo-15"><span>15</span><b>Image Sequence Animation</b><small>SCROLL</small><i>↗</i></a>
       </div>
     </section>
+
+    <section class="vol02-bridge section-wrap" aria-labelledby="vol02BridgeTitle"><span class="bridge-eyebrow">NEW DROP / VOL. 02 / 2026</span><div class="bridge-inner"><div><span class="bridge-count">+15</span><h2 id="vol02BridgeTitle">MORE MOTION.<br><em>MORE MAGIC.</em></h2><p>ครบ 30 เทคนิคแล้ว — ทดลอง Liquid Glass, WebGL Distortion, Infinite Canvas, Particles, 3D Spatial Gallery และ Scroll-Driven Video</p><a class="btn btn-coral" href="vol02.html#index">EXPLORE EXPERIMENTS 16–30 <span>↗</span></a></div><div class="bridge-graphic" aria-hidden="true"><span>VOLUME</span><strong>02</strong><i>✳</i></div></div><div class="bridge-index"><span>16 — LIQUID GLASS</span><span>18 — WEBGL</span><span>29 — SPATIAL GALLERY</span><span>30 — VIDEO SCRUB</span></div></section>
 
     <div class="chapter" id="chapter-story"><div class="chapter-label"><span class="chap-no">CHAPTER 01 / 03</span><span>SCROLL-DRIVEN STORIES</span></div><h2>MAKE YOUR<br><i>STORY MOVE.</i></h2><p>ให้การเลื่อนเว็บกลายเป็นส่วนหนึ่งของการเล่าเรื่อง</p><div class="chapter-circle">01—05 ↗</div></div>
 
@@ -138,7 +140,7 @@
 
     <section id="demo-15" class="sequence-demo scroll-track" data-demo="15"><div class="sequence-sticky"><div class="sequence-copy"><div class="experience-num">15 <span>/ 15</span></div><span class="experience-kicker">IMAGE SEQUENCE ANIMATION</span><h3>FRAME<br>BY <em>FRAME.</em></h3><p>48 เฟรมภาพจริงที่สร้างไว้ล่วงหน้า เลื่อนหน้าเพื่อควบคุมการติดวอลเปเปอร์แบบเฟรมต่อเฟรม หรือทดลองลากแถบด้านล่าง</p><div class="sequence-state"><span>FRAME</span><strong id="sequenceNumber">01</strong><span>/ 48</span></div><input type="range" min="0" max="47" value="0" id="sequenceRange" aria-label="เลื่อนดูภาพเคลื่อนไหวทีละเฟรม"><div class="sequence-small">↡ SCROLL OR DRAG THE TIMELINE</div></div><div class="sequence-display"><canvas id="sequenceCanvas" width="960" height="590" aria-label="ภาพเคลื่อนไหวการเปลี่ยนห้องก่อนและหลังติดวอลเปเปอร์"></canvas><div class="sequence-caption"><span>PROJECT: WALL TRANSFORMATION</span><span id="sequencePercent">000%</span></div></div></div></section>
 
-    <section class="final-cta"><div class="final-orb" aria-hidden="true">✳</div><span class="final-kicker">END OF EXPERIENCE / 015</span><h2>THE BEST WEBSITES<br>AREN'T JUST SEEN.<br><em>THEY'RE FELT.</em></h2><p>นี่คือตัวอย่าง Front-end Interactions ทั้ง 15 เทคนิค<br>สามารถนำแนวคิดไปประยุกต์กับเว็บสินค้า เว็บไซต์แบรนด์ และ Landing Page ได้</p><div class="final-actions"><a href="#directory" class="btn btn-coral">EXPLORE AGAIN ↗</a><a href="#home" class="text-link">BACK TO TOP ↑</a></div><div class="final-bottom"><span>MOTION/LAB — AN INTERACTIVE WEB SHOWCASE</span><span>MADE WITH HTML / CSS / JAVASCRIPT</span></div></section>
+    <section class="final-cta"><div class="final-orb" aria-hidden="true">✳</div><span class="final-kicker">END OF EXPERIENCE / 015</span><h2>THE BEST WEBSITES<br>AREN'T JUST SEEN.<br><em>THEY'RE FELT.</em></h2><p>นี่คือตัวอย่าง Front-end Interactions ทั้ง 15 เทคนิค<br>สามารถนำแนวคิดไปประยุกต์กับเว็บสินค้า เว็บไซต์แบรนด์ และ Landing Page ได้</p><div class="final-actions"><a href="vol02.html" class="btn btn-coral">EXPLORE VOL. 02 ↗</a><a href="#home" class="text-link">BACK TO TOP ↑</a></div><div class="final-bottom"><span>MOTION/LAB — AN INTERACTIVE WEB SHOWCASE</span><span>MADE WITH HTML / CSS / JAVASCRIPT</span></div></section>
   </main>
   <script src="app.js" defer></script>
 </body>
