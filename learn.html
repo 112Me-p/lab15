@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#151918">
+<meta name="description" content="MOTION LAB Interactive Learning Studio — 30 บทเรียนและพื้นที่ทดลอง Motion บนเว็บ">
+<title>MOTION LAB / Learning Studio</title>
+<link rel="stylesheet" href="learn.css">
+<script src="learn-data.js" defer></script>
+<script src="learn-engine.js" defer></script>
+<script src="learn.js" defer></script>
+</head>
+<body id="top">
+<header class="bar"><a class="brand" href="learn.html"><i aria-hidden="true"></i>MOTION<span>/LAB</span> <small>STUDIO</small></a><nav aria-label="เดโมต้นฉบับ"><a href="index.html#directory">VOL. 01</a><a href="vol02.html#index">VOL. 02</a></nav></header>
+<main>
+<section class="hero"><div><p class="eyebrow"><span></span> INTERACTIVE LEARNING STUDIO / 01–30</p><h1>LEARN BY<br><em>DOING.</em></h1><p class="intro">แกะหลักการ Motion Design จาก 30 เทคนิค เขียนพรอมต์ ปรับค่า แล้วลองเล่นกับผลลัพธ์ได้ทันที</p><a class="primary" href="#workspace">เข้าแล็บ <b aria-hidden="true">↘</b></a></div><div class="hero-art" aria-hidden="true"><div class="orbit a"></div><div class="orbit b"></div><div class="orb"></div><span>FIG. 01 <b>INPUT → MOTION</b></span></div></section>
+<section class="workspace" id="workspace" aria-label="แล็บเรียนรู้">
+<aside class="library"><p class="eyebrow">01 / TECHNIQUE INDEX</p><h2>เลือกเทคนิค</h2><label for="search">ค้นหาจากชื่อหรือเลขบท</label><input id="search" type="search" placeholder="เช่น 17 หรือ Magnetic"><div id="lesson-list" role="group" aria-label="บทเรียน"></div></aside>
+<div class="content">
+<section class="lesson" aria-labelledby="lesson-title"><p id="lesson-label" class="eyebrow"></p><h2 id="lesson-title"></h2><p id="principle"></p><ol><li id="observe"></li><li id="challenge"></li></ol><div class="actions"><a id="original" target="_blank" rel="noopener">เปิดเดโมต้นฉบับ ↗</a><button id="complete" type="button" aria-pressed="false">ทำบทนี้แล้ว</button></div></section>
+<section class="playground" aria-labelledby="play-title">
+<div class="panel-head"><div><p class="eyebrow">02 / PROMPT PLAYGROUND</p><h2 id="play-title">ทดลองปรับ Motion</h2></div><span class="tag">● BASIC / OFFLINE</span></div>
+<div class="panels">
+<div class="editor"><label for="prompt">พรอมต์ของคุณ</label><textarea id="prompt" rows="4" maxlength="420" spellcheck="false" aria-describedby="prompt-help"></textarea><p id="prompt-help">ลองระบุสี ขนาด (px) ระยะเวลา (ms/s) และความแรง (%) ใช้ไทยหรืออังกฤษได้ พารามิเตอร์ที่รองรับขึ้นด้านล่าง</p><div class="actions"><button id="reset" type="button">พรอมต์ตัวอย่าง</button><button id="compare" type="button" aria-pressed="false">เปรียบเทียบ A/B</button></div><p id="status" role="status"></p><div class="values" id="values"></div></div>
+<div class="preview-stack"><div class="preview" id="before-panel" hidden><p>A / ค่าเริ่มต้น</p><iframe id="before" sandbox="allow-scripts" title="ผลลัพธ์ค่าเริ่มต้น"></iframe></div><div class="preview"><p id="after-label">LIVE / ผลจากพรอมต์</p><iframe id="after" sandbox="allow-scripts" title="ผลจากพรอมต์ล่าสุด"></iframe></div></div>
+</div>
+<details class="ai"><summary>AI Mode · ต้องเชื่อมระบบเพิ่ม</summary><p>Basic แปลงคำที่รองรับเป็นค่าของเทคนิคที่เลือกในเบราว์เซอร์ ส่วน AI Mode สำหรับตีความพรอมต์อิสระต้องมีเซิร์ฟเวอร์ที่เก็บ API key และส่งกลับเฉพาะข้อมูลที่ผ่านการตรวจสอบ ดูรูปแบบการเชื่อมต่อใน README ของโปรเจกต์</p></details>
+</section>
+<section class="tools" aria-labelledby="code-title"><p class="eyebrow">03 / CODE INSPECTOR</p><h2 id="code-title">โค้ดที่ใช้ในพรีวิว</h2><div class="actions" role="group" aria-label="เลือกภาษาโค้ด"><button data-code="html" aria-pressed="true">HTML</button><button data-code="css" aria-pressed="false">CSS</button><button data-code="js" aria-pressed="false">JavaScript</button></div><pre tabindex="0"><code id="code"></code></pre><div class="actions"><button id="copy">คัดลอกโค้ด</button><button id="save">บันทึกงาน</button><button class="primary" id="export">ดาวน์โหลด HTML ↓</button></div><p id="save-status" role="status"></p><label for="saved">งานที่บันทึกไว้บนเบราว์เซอร์นี้</label><div class="actions"><select id="saved"></select><button id="load">เปิดงาน</button><button id="remove">ลบงาน</button></div></section>
+</div></section></main>
+<footer>MOTION/LAB <span>INTERACTIVE LEARNING STUDIO · 30 TECHNIQUES</span><a href="#top">กลับด้านบน ↑</a></footer>
+</body></html>
